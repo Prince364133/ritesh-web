@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Zestech Enterprises</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .product-header {
+            background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.8)), url('https://picsum.photos/seed/industrial_header/1920/600');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .category-section {
+            margin-bottom: 6rem;
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 1rem;
+        }
+
+        .category-title {
+            font-size: 2rem;
+            color: var(--color-primary);
+            margin: 0;
+        }
+
+        .category-icon {
+            font-size: 2rem;
+            margin-right: 1rem;
+            color: var(--color-accent);
+        }
+
+        .product-card-detail {
+            display: flex;
+            background: #fff;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 2rem;
+            transition: 0.3s;
+            border: 1px solid #f0f0f0;
+        }
+
+        .product-card-detail:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-3px);
+        }
+
+        .product-img-col {
+            flex: 1;
+            min-width: 300px;
+            background: #eee;
+            position: relative;
+        }
+
+        .product-img-col img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+
+        .product-info-col {
+            flex: 2;
+            padding: 2rem;
+        }
+
+        .specs-list {
+            margin: 1rem 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+        }
+
+        .spec-item {
+            background: var(--color-bg-light);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: var(--color-text-main);
+        }
+
+        .spec-item strong {
+            display: block;
+            color: var(--color-primary);
+        }
+
+        @media (max-width: 768px) {
+            .product-card-detail {
+                flex-direction: column;
+            }
+
+            .product-img-col {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <div class="product-header">
+        <div class="container">
+            <h1 class="fade-in-up" style="color: #fff;">Our Product Range</h1>
+            <p class="fade-in-up delay-100" style="max-width: 600px; margin: 1rem auto; color: #cbd5e1;">Discover our
+                extensive portfolio of high-grade electrical equipment designed for reliability and efficiency.</p>
+        </div>
+    </div>
+
+    <div class="container" style="padding: 4rem 1rem;">
+
+        <!-- Transformers -->
+        <div class="category-section">
+            <div class="category-header">
+                <span class="category-icon">⚡</span>
+                <h2 class="category-title">Transformers</h2>
+            </div>
+
+            <div class="product-card-detail">
+                <div class="product-img-col">
+                    <img src="https://picsum.photos/seed/transformer_dist/800/600" alt="Distribution Transformer">
+                </div>
+                <div class="product-info-col">
+                    <h3>Distribution Transformers</h3>
+                    <p>Oil-filled transformers designed for efficient power distribution in industrial and residential
+                        networks.</p>
+                    <div class="specs-list">
+                        <div class="spec-item"><strong>Capacity</strong>Up to 5000 kVA</div>
+                        <div class="spec-item"><strong>Voltage Class</strong>11kV / 33kV</div>
+                        <div class="spec-item"><strong>Cooling</strong>ONAN / ONAF</div>
+                        <div class="spec-item"><strong>Standard</strong>IS 1180 / IEC</div>
+                    </div>
+                    <a href="contact.html" class="btn btn-secondary">Request Quote</a>
+                </div>
+            </div>
+
+            <div class="product-card-detail">
+                <div class="product-img-col">
+                    <img src="https://picsum.photos/seed/transformer_ester/800/600" alt="Ester Oil Transformer">
+                </div>
+                <div class="product-info-col">
+                    <h3>Ester Oil Type Transformers</h3>
+                    <p>Eco-friendly and fire-safe transformers using natural or synthetic ester fluids.</p>
+                    <div class="specs-list">
+                        <div class="spec-item"><strong>Safety</strong>Fire Resistant (K-Class)</div>
+                        <div class="spec-item"><strong>Eco-Friendly</strong>Biodegradable</div>
+                        <div class="spec-item"><strong>Application</strong>Indoor / High-Risk Areas</div>
+                    </div>
+                    <a href="contact.html" class="btn btn-secondary">Request Quote</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Switchgear -->
+        <div class="category-section">
+            <div class="category-header">
+                <span class="category-icon">🎛️</span>
+                <h2 class="category-title">Switchgear & Panels</h2>
+            </div>
+
+            <div class="product-card-detail">
+                <div class="product-img-col">
+                    <img src="https://picsum.photos/seed/switchgear_vcb/800/600" alt="VCB Panel">
+                </div>
+                <div class="product-info-col">
+                    <h3>Vacuum Circuit Breaker (VCB)</h3>
+                    <p>Reliable medium voltage protection panels with vacuum interrupters.</p>
+                    <div class="specs-list">
+                        <div class="spec-item"><strong>Voltage</strong>11kV / 33kV</div>
+                        <div class="spec-item"><strong>Current</strong>Up to 2000A</div>
+                        <div class="spec-item"><strong>Breaking Capacity</strong>25kA / 40kA</div>
+                    </div>
+                    <a href="contact.html" class="btn btn-secondary">Request Quote</a>
+                </div>
+            </div>
+
+            <div class="product-card-detail">
+                <div class="product-img-col">
+                    <img src="https://picsum.photos/seed/control_panel/800/600" alt="Control Panel">
+                </div>
+                <div class="product-info-col">
+                    <h3>PCC & MCC Panels</h3>
+                    <p>Power Control Centers and Motor Control Centers for industrial automation.</p>
+                    <div class="specs-list">
+                        <div class="spec-item"><strong>Type</strong>Modular / Fixed</div>
+                        <div class="spec-item"><strong>IP Rating</strong>IP42 / IP54</div>
+                        <div class="spec-item"><strong>Material</strong>CRCA Steel</div>
+                    </div>
+                    <a href="contact.html" class="btn btn-secondary">Request Quote</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cables -->
+        <div class="category-section">
+            <div class="category-header">
+                <span class="category-icon">🔌</span>
+                <h2 class="category-title">Cables & Conductors</h2>
+            </div>
+
+            <div class="product-card-detail">
+                <div class="product-img-col">
+                    <img src="https://picsum.photos/seed/cables_reel/800/600" alt="Industrial Cables">
+                </div>
+                <div class="product-info-col">
+                    <h3>HT & LT Cables</h3>
+                    <p>XLPE and PVC insulated cables for heavy-duty power transmission.</p>
+                    <div class="specs-list">
+                        <div class="spec-item"><strong>Core</strong>Aluminum / Copper</div>
+                        <div class="spec-item"><strong>Armoring</strong>Steel Wire / Strip</div>
+                        <div class="spec-item"><strong>Voltage</strong>1.1kV upto 33kV</div>
+                    </div>
+                    <a href="contact.html" class="btn btn-secondary">Request Quote</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

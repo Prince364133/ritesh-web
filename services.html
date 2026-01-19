@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Zestech Enterprises</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .services-header {
+            background: var(--color-primary);
+            color: #fff;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .service-card {
+            border: 1px solid #eee;
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            transition: 0.3s;
+            height: 100%;
+        }
+
+        .service-card:hover {
+            box-shadow: var(--shadow-lg);
+            border-color: var(--color-accent);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <div class="services-header">
+        <div class="container">
+            <h1 style="color: #fff;">Our Services</h1>
+            <p>Comprehensive solutions for your industrial needs</p>
+        </div>
+    </div>
+
+    <!-- Static Services -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">Core Services</h2>
+            <div class="grid-container">
+                <div class="service-card">
+                    <span class="service-icon">🚚</span>
+                    <h3>Supply & Logistics</h3>
+                    <p>Efficient delivery of electrical equipment including transformers, cables, and switchgear across
+                        the nation. We ensure timely and safe transportation.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">⚙️</span>
+                    <h3>Installation Support</h3>
+                    <p>Expert guidance and support for the installation of complex electrical systems, ensuring safety
+                        and compliance with standards.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">🏭</span>
+                    <h3>OEM Fulfillment</h3>
+                    <p>Partnering with Original Equipment Manufacturers to supply high-grade components for assembly and
+                        manufacturing processes.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">📦</span>
+                    <h3>Bulk Orders</h3>
+                    <p>Specialized handling for large-scale government and private sector orders with competitive
+                        pricing and priority processing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Services -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center">Additional Offerings</h2>
+            <p class="text-center" style="margin-bottom: 2rem; color: #666;">Explore our expanding range of specialized
+                services.</p>
+
+            <div id="dynamic-services-container" class="grid-container">
+                <!-- Dynamic content will run here -->
+                <p class="text-center" style="width: 100%; grid-column: 1/-1;">Loading active services...</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script type="module" src="js/services.js"></script>
+</body>
+
+</html>

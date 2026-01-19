@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Zestech Enterprises</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.8)), url('https://picsum.photos/seed/industrial_team/1920/600');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .value-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            height: 100%;
+            border-top: 4px solid var(--color-accent);
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <div class="about-hero">
+        <div class="container">
+            <h1>About Zestech Enterprises</h1>
+            <p>Powering Industries Since 2023</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 2rem;">Who We Are</h2>
+            <div style="max-width: 800px; margin: 0 auto; line-height: 1.8; color: #555; text-align: center;">
+                <p>
+                    Zestech Enterprises is your premier destination for all your electrical equipment needs.
+                    Established in 2023, we specialize in selling and supplying a wide range of high-quality
+                    electrical products, ensuring that our customers have access to the best solutions for their
+                    projects.
+                </p>
+                <br>
+                <p>
+                    Located in New Delhi, we are committed to excellence, reliability, and customer satisfaction,
+                    providing products that meet rigorous industrial standards. Our expertise spans across various
+                    sectors including electrical utilities, infrastructure, EPC projects, and OEM manufacturing.
+                </p>
+            </div>
+
+            <div style="margin-top: 4rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <img src="https://picsum.photos/seed/office_work/600/400" alt="Our Office"
+                    style="border-radius: var(--radius-md); box-shadow: var(--shadow-md); width: 100%; max-width: 500px; object-fit: cover;">
+                <img src="https://picsum.photos/seed/warehouse_stock/600/400" alt="Our Warehouse"
+                    style="border-radius: var(--radius-md); box-shadow: var(--shadow-md); width: 100%; max-width: 500px; object-fit: cover;">
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center">Our Core Values</h2>
+            <div class="grid-3">
+                <div class="value-card">
+                    <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Our Vision</h3>
+                    <p>To be the leading supplier of innovative and reliable electrical solutions, powering
+                        infrastructure growth across the nation.</p>
+                </div>
+                <div class="value-card">
+                    <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Our Mission</h3>
+                    <p>To deliver high-quality products efficiently and cost-effectively, empowering our clients to
+                        execute their projects with confidence.</p>
+                </div>
+                <div class="value-card">
+                    <h3 style="color: var(--color-primary); margin-bottom: 1rem;">Quality Promise</h3>
+                    <p>We supply only the best industrial-grade equipment, ensuring safety, durability, and performance
+                        in every product we deliver.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
