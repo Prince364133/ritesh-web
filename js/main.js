@@ -8,10 +8,16 @@ function loadLayout() {
     // Inject Header
     const headerHTML = `
         <div class="top-bar">
-            <div class="container">
+            <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
                 <div class="contact-info">
                     <span>📞 +91 9582516433</span>
                     <span style="margin-left: 15px;">✉️ zestechenterprises@gmail.com</span>
+                </div>
+                <div class="social-icons" style="display: flex; gap: 10px;">
+                    <a href="#" style="color: #fff; text-decoration: none;">WhatsApp</a>
+                    <a href="#" style="color: #fff; text-decoration: none;">Instagram</a>
+                    <a href="#" style="color: #fff; text-decoration: none;">Facebook</a>
+                    <a href="#" style="color: #fff; text-decoration: none;">LinkedIn</a>
                 </div>
             </div>
         </div>
@@ -25,11 +31,11 @@ function loadLayout() {
                 <nav class="nav-menu" id="nav-menu">
                     <a href="index.html" class="nav-link">Home</a>
                     <a href="about.html" class="nav-link">About Us</a>
-                    <a href="products.html" class="nav-link">Products</a>
-                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="products.html" class="nav-link">Products & Solutions</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
                     <a href="contact.html" class="nav-link">Contact</a>
                 </nav>
-                <a href="contact.html" class="btn btn-primary" style="display: none; @media(min-width: 768px){display:inline-block;}">Get Quote</a>
+                <a href="https://wa.me/919582516433" target="_blank" class="btn btn-primary" style="display: none; @media(min-width: 768px){display:inline-block;}">Get Quote</a>
             </div>
         </header>
     `;

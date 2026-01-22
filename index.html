@@ -10,23 +10,76 @@
   <link rel="stylesheet" href="css/style.css">
 
   <style>
-    /* Hero Specifics */
+    /* Hero Specifics with Slider */
     .hero-section {
       min-height: 95vh;
-      background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.7) 100%),
-        url('https://picsum.photos/seed/industrial_hero/1920/1080');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      /* Parallax effect */
+      position: relative;
       display: flex;
       align-items: center;
-      position: relative;
+      overflow: hidden;
+    }
+
+    /* Slider Backgrounds */
+    .hero-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      z-index: -1;
+      animation: slideFade 15s infinite;
+    }
+
+    .hero-slide:nth-child(1) {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.7) 100%),
+        url('https://picsum.photos/seed/industrial_hero1/1920/1080');
+      background-size: cover;
+      animation-delay: 0s;
+    }
+
+    .hero-slide:nth-child(2) {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.7) 100%),
+        url('https://picsum.photos/seed/industrial_hero2/1920/1080');
+      background-size: cover;
+      animation-delay: 5s;
+    }
+
+    .hero-slide:nth-child(3) {
+      background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.7) 100%),
+        url('https://picsum.photos/seed/industrial_hero3/1920/1080');
+      background-size: cover;
+      animation-delay: 10s;
+    }
+
+    @keyframes slideFade {
+      0% {
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 1;
+      }
+
+      33% {
+        opacity: 1;
+      }
+
+      43% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 0;
+      }
     }
 
     .hero-content {
       max-width: 900px;
       color: #fff;
+      z-index: 10;
     }
 
     .hero-title {
@@ -167,6 +220,11 @@
 
   <!-- Hero Section -->
   <section class="hero-section">
+    <!-- Slider Images -->
+    <div class="hero-slide"></div>
+    <div class="hero-slide"></div>
+    <div class="hero-slide"></div>
+
     <div class="container hero-content">
       <h1 class="hero-title fade-in-up">Powering the Future of <br><span>Industrial Infrastructure</span></h1>
       <p class="hero-subtitle fade-in-up delay-100">
@@ -180,7 +238,8 @@
           </svg>
           Download Catalogue
         </a>
-        <a href="contact.html" class="btn btn-outline-white" style="margin-left: 1rem;">Get Custom Quote</a>
+        <a href="https://wa.me/919582516433" target="_blank" class="btn btn-outline-white"
+          style="margin-left: 1rem;">Get Custom Quote</a>
       </div>
     </div>
   </section>
@@ -208,7 +267,7 @@
   <!-- Introduction -->
   <section class="section">
     <div class="container text-center">
-      <p class="text-accent" style="font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #fff;">
+      <p style="font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #ffffff;">
         About Zestech
         Enterprises</p>
       <h2 style="max-width: 800px; margin: 0 auto 2rem auto;">Delivering High-Performance Electrical Equipment Across
@@ -437,7 +496,8 @@
         style="color: #cbd5e1; font-size: 1.2rem; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
         Get a competitive quote for your electrical equipment needs today.
       </p>
-      <a href="contact.html" class="btn btn-primary" style="padding: 1rem 3rem; font-size: 1.1rem;">Request Quote</a>
+      <a href="https://wa.me/919582516433" target="_blank" class="btn btn-primary"
+        style="padding: 1rem 3rem; font-size: 1.1rem;">Request Quote</a>
     </div>
   </section>
 
