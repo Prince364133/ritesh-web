@@ -1,9 +1,11 @@
 :root {
     /* Industrial Color Palette */
-    --color-primary: #0F172A;
-    --color-primary-light: #1E293B;
-    --color-accent: #F59E0B;
-    --color-accent-hover: #D97706;
+    --color-primary: #0c88bb;
+    --color-primary-light: #075f85;
+    /* Darker shade of new blue */
+    --color-accent: #a53692;
+    --color-accent-hover: #7e226d;
+    /* Darker shade of new accent */
 
     --color-bg-light: #F8FAFC;
     --color-bg-white: #FFFFFF;
@@ -233,6 +235,30 @@ p {
     font-weight: 500;
     letter-spacing: 2px;
     color: var(--color-accent);
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(12, 136, 187, 0.1);
+    /* Light tint of primary blue */
+    color: var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: var(--color-accent);
+    color: #fff;
+    transform: translateY(-2px);
 }
 
 /* Desktop Navigation */
