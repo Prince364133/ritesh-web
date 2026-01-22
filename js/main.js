@@ -10,12 +10,12 @@ function loadLayout() {
         <div class="top-bar">
             <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
                 <div class="contact-info">
-                    <span>📞 +91 9582516433</span>
+                    <span>📞 +91 9552548433</span>
                     <span style="margin-left: 15px;">✉️ zestechenterprises@gmail.com</span>
                 </div>
                 <!-- Social Media Icons (Right Side) -->
                 <div class="social-icons" style="display: flex; gap: 15px;">
-                    <a href="https://wa.me/919582516433" target="_blank" aria-label="WhatsApp" class="social-icon">
+                    <a href="https://wa.me/919552548433" target="_blank" aria-label="WhatsApp" class="social-icon">
                         <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.968.586 1.972.827 3.298.83l.004.033h.032c3.182 0 5.768-2.586 5.769-5.766 0-3.181-2.587-5.767-5.768-5.767zm0 10.155c-1.146 0-2.29-.353-2.909-1.01l-1.05.275.281-.989c-.618-.982-.71-2.153-.711-2.665.001-2.327 1.745-4.148 4.15-4.147 2.327 0 4.148 1.821 4.15 4.147 0 2.327-1.822 4.149-4.15 4.149zm9.052-4.422c-.391-.186-2.16-1.132-2.316-1.132-.156.113-.313.376-.469.564-.156.188-.313.376-.469.376-.156 0-.313 0-1.252-.47-1.564-.658-2.66-2.068-2.816-2.257-.156-.188-.156-.47-.078-.564.078-.094.156-.282.235-.47.078-.188.156-.376.156-.564-.078-.094-.391-1.034-.547-1.41-.156-.376-.313-.376-.469-.376h-.391c-.156 0-.391.094-.626.376-.235.282-.86 1.034-.86 2.35 0 1.222 1.33 2.16 1.486 2.443 1.017 1.88 2.034 2.35 3.364 2.82.47.188.86.282 1.252.376.235.094.469.094.704.094.548 0 1.33-.564 1.565-1.034.235-.47.235-.846.156-.94-.078-.094-.235-.188-.469-.282z"/></svg>
                     </a>
                     <a href="https://instagram.com" target="_blank" aria-label="Instagram" class="social-icon">
@@ -43,7 +43,7 @@ function loadLayout() {
                     <a href="gallery.html" class="nav-link">Gallery</a>
                     <a href="contact.html" class="nav-link">Contact</a>
                 </nav>
-                <a href="https://wa.me/919582516433" target="_blank" class="btn btn-primary" style="display: none; @media(min-width: 768px){display:inline-block;}">Get Quote</a>
+                <a href="https://wa.me/919552548433" target="_blank" class="btn btn-primary" style="display: none; @media(min-width: 768px){display:inline-block;}">Get Quote</a>
             </div>
         </header>
     `;
@@ -68,8 +68,8 @@ function loadLayout() {
                 <div class="footer-col">
                     <h3>Contact Us</h3>
                     <ul>
-                        <li>📍 New Delhi, India</li>
-                        <li>📞 +91 9582516433</li>
+                        <li>📍 Second Floor, Datta Kurpa Building, Atrey Layout, Pratap Nagar, Nagpur - 440022, India</li>
+                        <li>📞 +91 9552548433</li>
                         <li>✉️ zestechenterprises@gmail.com</li>
                     </ul>
                 </div>
