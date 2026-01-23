@@ -78,6 +78,7 @@
 
     .hero-content {
       max-width: 900px;
+      width: 100%;
       color: #fff;
       z-index: 10;
     }
@@ -101,6 +102,8 @@
       max-width: 600px;
       font-weight: 300;
     }
+
+
 
     /* Stats Strip */
     .stats-strip {
@@ -130,61 +133,7 @@
       opacity: 0.9;
     }
 
-    /* Product Cards 2.0 */
-    .product-grid-v2 {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 2.5rem;
-      margin-top: 3rem;
-    }
 
-    .product-card-v2 {
-      position: relative;
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      box-shadow: var(--shadow-md);
-      cursor: pointer;
-    }
-
-    .product-card-v2 img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-      transition: transform 0.5s ease;
-    }
-
-    .product-card-v2:hover img {
-      transform: scale(1.05);
-    }
-
-    .card-overlay {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      padding: 2rem;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-      color: #fff;
-    }
-
-    .card-overlay h3 {
-      color: #fff;
-      margin-bottom: 0.5rem;
-    }
-
-    .card-overlay p {
-      color: #e2e8f0;
-      font-size: 0.9rem;
-      margin-bottom: 1rem;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: 0.3s;
-    }
-
-    .product-card-v2:hover .card-overlay p {
-      opacity: 1;
-      transform: translateY(0);
-    }
 
     /* Why Choose Us */
     .why-us-grid {
@@ -202,10 +151,6 @@
     }
 
     @media (max-width: 768px) {
-      .hero-title {
-        font-size: 2.5rem;
-      }
-
       .stats-strip {
         margin-top: 0;
         border-radius: 0;
@@ -226,20 +171,52 @@
     <div class="hero-slide"></div>
 
     <div class="container hero-content">
-      <h1 class="hero-title fade-in-up">Powering the Future of <br><span>Industrial Infrastructure</span></h1>
-      <p class="hero-subtitle fade-in-up delay-100">
-        Premium electrical solutions for utilities, OEMs, and infrastructure projects.
-        Reliable Transformers, Switchgear, and Cables — Engineered for Excellence.
-      </p>
-      <div class="fade-in-up delay-200">
-        <a href="catalogue.html" class="btn btn-primary">
-          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"></path>
-          </svg>
-          Download Catalogue
-        </a>
-        <a href="https://wa.me/919552548433" target="_blank" class="btn btn-outline-white"
-          style="margin-left: 1rem;">Get Custom Quote</a>
+      <div class="hero-text-container">
+        <!-- Slide 1 Text -->
+        <div class="hero-text-slide">
+          <h1 class="hero-title">Powering the Future of <br><span>Industrial Infrastructure</span></h1>
+          <p class="hero-subtitle">
+            Premium electrical solutions for utilities, OEMs, and infrastructure projects.
+            Reliable Transformers, Switchgear, and Cables — Engineered for Excellence.
+          </p>
+          <div>
+            <a href="catalogue.html" class="btn btn-primary">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"></path>
+              </svg>
+              Download Catalogue
+            </a>
+            <a href="https://wa.me/919552548433" target="_blank" class="btn btn-outline-white"
+              style="margin-left: 1rem;">Get Custom Quote</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 Text -->
+        <div class="hero-text-slide">
+          <h1 class="hero-title">Advanced <br><span>Transformers & Switchgear</span></h1>
+          <p class="hero-subtitle">
+            High-efficiency manufacturing ensuring stability and performance for your grid requirements.
+            Tested for durability in the toughest environments.
+          </p>
+          <div>
+            <a href="products.html" class="btn btn-primary">Explore Products</a>
+            <a href="https://wa.me/919552548433" target="_blank" class="btn btn-outline-white"
+              style="margin-left: 1rem;">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 Text -->
+        <div class="hero-text-slide">
+          <h1 class="hero-title">Reliable Engineering for <br><span>Critical Projects</span></h1>
+          <p class="hero-subtitle">
+            Trusted by major infrastructure corporations for timely delivery and uncompromised quality standards.
+          </p>
+          <div>
+            <a href="contact.html" class="btn btn-primary">Start a Project</a>
+            <a href="https://wa.me/919552548433" target="_blank" class="btn btn-outline-white"
+              style="margin-left: 1rem;">Enquire Now</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>

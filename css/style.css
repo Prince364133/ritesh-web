@@ -415,3 +415,219 @@ footer {
         border-radius: 0;
     }
 }
+
+/* Responsiveness for JS injected elements */
+.top-bar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-item {
+    margin-right: 15px;
+}
+
+.contact-item:last-child {
+    margin-right: 0;
+}
+
+.header-quote-btn {
+    display: none;
+}
+
+@media(min-width: 768px) {
+    .header-quote-btn {
+        display: inline-flex;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Hide top bar on mobile */
+    .top-bar {
+        display: none;
+    }
+
+    .top-bar-inner {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 0.85rem;
+    }
+
+    .contact-item {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    /* Mobile Contact Info in Nav */
+    .mobile-contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid #eee;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile-contact-item {
+        font-size: 0.9rem;
+        color: var(--color-text-light);
+    }
+
+    .mobile-social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 5px;
+    }
+}
+
+/* Default hidden on desktop */
+.mobile-contact-info,
+.mobile-social-icons {
+    display: none;
+}
+
+/* =========================================
+   Global Component Styles
+   ========================================= */
+
+/* Hero Text & Animation */
+.hero-text-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 2rem;
+}
+
+.hero-text-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    animation: textSlideFade 15s infinite;
+    z-index: 10;
+}
+
+.hero-text-slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.hero-text-slide:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.hero-text-slide:nth-child(3) {
+    animation-delay: 10s;
+}
+
+/* Animation with non-overlapping timing */
+@keyframes textSlideFade {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    28% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Hero Typography Responsiveness */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Product Grid V2 */
+.product-grid-v2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.product-card-v2 {
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    cursor: pointer;
+}
+
+.product-card-v2 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card-v2:hover img {
+    transform: scale(1.05);
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: #fff;
+}
+
+.card-overlay h3 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.card-overlay p {
+    color: #e2e8f0;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.3s;
+}
+
+.product-card-v2:hover .card-overlay p {
+    opacity: 1;
+    transform: translateY(0);
+}
