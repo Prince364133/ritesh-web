@@ -105,6 +105,17 @@ function loadLayout() {
     document.getElementById('header-placeholder').innerHTML = headerHTML;
     document.getElementById('footer-placeholder').innerHTML = footerHTML;
 
+    // Inject Floating WhatsApp Button
+    const whatsappHTML = `
+        <a href="https://wa.me/919552548433" target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+            <svg viewBox="0 0 32 32" class="whatsapp-icon">
+                <path d="M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-1.003-2.58-.303-.54-1.317-.68-1.777-.68-.523 0-1.28.312-1.28 1.29 0 .978.49 2.064.912 2.7.235.348 2.007 2.923 4.545 4.02.73.315 1.5.58 2.227.696.538.086 1.127.086 1.63.023.635-.084 1.777-.734 2.053-1.5.23-.64.23-1.25.17-1.39-.145-.34-.49-.49-1.012-.66z"/>
+                <path d="M16 4C9.373 4 4 9.373 4 16c0 2.253.63 4.35 1.71 6.16L4 28l5.96-1.597A11.95 11.95 0 0 0 16 28c6.627 0 12-5.373 12-12S22.627 4 16 4zm0 22c-2.035 0-3.924-.595-5.545-1.623l-.4-.253-3.628.972.97-3.513-.263-.427A9.957 9.957 0 0 1 6 16c0-5.514 4.486-10 10-10 5.514 0 10 4.486 10 10s-4.486 10-10 10z"/>
+            </svg>
+        </a>
+    `;
+    document.body.insertAdjacentHTML('beforeend', whatsappHTML);
+
     // Highlight active link
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const links = document.querySelectorAll('.nav-link');
