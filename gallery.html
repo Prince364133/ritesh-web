@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Zestech Enterprises</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .gallery-header {
+            background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.8)), url('images/site/hero3.webp');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <div class="gallery-header">
+        <div class="container">
+            <h1 style="color: #fff;">Our Gallery</h1>
+            <p>A glimpse into our projects, facility, and products.</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 3rem;">Project Highlights</h2>
+            <div class="gallery-grid">
+                <!-- Placeholders for various categories -->
+                <div class="gallery-item">
+                    <img src="images/site/hero1.webp" alt="Project Site">
+                    <div class="gallery-overlay">
+                        <h5>Substation Installation</h5>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/products/oil-type-transformers-1000kva-2500kva-1.jpg" alt="Transformer">
+                    <div class="gallery-overlay">
+                        <h5>Power Transformer</h5>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/site/panel_hero.jpg" alt="Control Panel">
+                    <div class="gallery-overlay">
+                        <h5>Control Panel Unit</h5>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/site/facility.jpg" alt="Cables">
+                    <div class="gallery-overlay">
+                        <h5>High Tension Cables</h5>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/site/hero5.webp" alt="Delivery">
+                    <div class="gallery-overlay">
+                        <h5>Logistics & Delivery</h5>
+                    </div>
+                </div>
+                <!-- Additional Asset Images -->
+                <div class="gallery-item">
+                    <img src="assets/images/intro-facility.jpg" alt="Facility Overview">
+                    <div class="gallery-overlay">
+                        <h5>Facility Overview</h5>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/products-header-bg.jpg" alt="Industrial Solutions">
+                    <div class="gallery-overlay">
+                        <h5>Industrial Solutions</h5>
+                    </div>
+                </div>
+                <!-- New Images -->
+                <div class="gallery-item">
+                    <img src="assets/images/gallery%20images/1.jpeg" alt="Gallery Image 1">
+                    <div class="gallery-overlay">
+                        <h5>Gallery Image 1</h5>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery%20images/2.jpeg" alt="Gallery Image 2">
+                    <div class="gallery-overlay">
+                        <h5>Gallery Image 2</h5>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery%20images/3.jpeg" alt="Gallery Image 3">
+                    <div class="gallery-overlay">
+                        <h5>Gallery Image 3</h5>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery%20images/4.jpeg" alt="Gallery Image 4">
+                    <div class="gallery-overlay">
+                        <h5>Gallery Image 4</h5>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery%20images/5.jpeg" alt="Gallery Image 5">
+                    <div class="gallery-overlay">
+                        <h5>Gallery Image 5</h5>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery%20images/6.jpeg" alt="Gallery Image 6">
+                    <div class="gallery-overlay">
+                        <h5>Gallery Image 6</h5>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery%20images/7.jpeg" alt="Gallery Image 7">
+                    <div class="gallery-overlay">
+                        <h5>Gallery Image 7</h5>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery%20images/8.jpeg" alt="Gallery Image 8">
+                    <div class="gallery-overlay">
+                        <h5>Gallery Image 8</h5>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery%20images/9.jpeg" alt="Gallery Image 9">
+                    <div class="gallery-overlay">
+                        <h5>Gallery Image 9</h5>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery%20images/10.jpeg" alt="Gallery Image 10">
+                    <div class="gallery-overlay">
+                        <h5>Gallery Image 10</h5>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery%20images/11.jpeg" alt="Gallery Image 11">
+                    <div class="gallery-overlay">
+                        <h5>Gallery Image 11</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

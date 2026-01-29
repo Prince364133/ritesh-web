@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product & Categories | Zestech Enterprises</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <div class="product-header">
+        <div class="container">
+            <h1 class="fade-in-up" style="color: #fff;">Product & Categories</h1>
+            <p class="fade-in-up delay-100" style="max-width: 600px; margin: 1rem auto; color: #cbd5e1;">Discover our
+                extensive portfolio of high-grade electrical equipment designed for reliability and efficiency.</p>
+        </div>
+    </div>
+
+    <div class="container" style="padding: 4rem 1rem;">
+
+        <!-- Search Bar -->
+        <div class="product-search-container fade-in-up delay-200">
+            <input type="text" id="productSearch" class="search-input" placeholder="Search products...">
+            <span class="search-icon">🔍</span>
+        </div>
+
+        <!-- TRANSFORMER & AVR -->
+        <div class="category-section">
+            <div class="category-header">
+                <span class="category-icon">⚡</span>
+                <h2 class="category-title">TRANSFORMER & AVR</h2>
+            </div>
+            <div class="product-grid">
+                <!-- Oil Filled Transformers -->
+                <div class="product-card-new" data-title="Oil Filled Transformers">
+                    <div class="pc-img-wrapper">
+                        <img src="images/products/oil-type-transformers-200kv-1000kva-1.jpg"
+                            alt="Oil Filled Transformers">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">OIL FILLED TRANSFORMERS</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('Oil Filled Transformers'); return false;"
+                                class="btn-quote-sm">Get Quote <span>→</span></a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Oil filled distribution transformers for urban and industrial
+                            applications, suitable for buildings and medium scale industries.</div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Power Rating</span>
+                                <div class="modal-spec-value">200kVA - 2500kVA</div>
+                            </div>
+                            <div class="modal-spec-item"><span class="modal-spec-label">Cooling Type</span>
+                                <div class="modal-spec-value">Oil Cooled</div>
+                            </div>
+                            <div class="modal-spec-item"><span class="modal-spec-label">Standards</span>
+                                <div class="modal-spec-value">IS-1180</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Power Transformers -->
+                <div class="product-card-new" data-title="Power Transformers">
+                    <div class="pc-img-wrapper">
+                        <img src="images/products/oil-type-transformers-1000kva-2500kva-1.jpg" alt="Power Transformers">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">POWER TRANSFORMERS</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('Power Transformers'); return false;" class="btn-quote-sm">Get
+                                Quote <span>→</span></a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Heavy duty power transformers for large scale industrial applications.
+                        </div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Power Rating</span>
+                                <div class="modal-spec-value">1000kVA - 2500kVA</div>
+                            </div>
+                            <div class="modal-spec-item"><span class="modal-spec-label">Voltage</span>
+                                <div class="modal-spec-value">11kV / 33kV</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VPI/Cast -->
+                <div class="product-card-new" data-title="VPI Dry Type Transformers">
+                    <div class="pc-img-wrapper">
+                        <img src="images/products/vpi-dry-type-transformers-1.jpg" alt="VPI Dry Type Transformers">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">VPI/CAST</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('VPI Dry Type Transformers'); return false;"
+                                class="btn-quote-sm">Get Quote <span>→</span></a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Vacuum Pressure Impregnated dry type transformers suitable for indoor
+                            applications with high safety requirements.</div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Type</span>
+                                <div class="modal-spec-value">VPI Dry Type</div>
+                            </div>
+                            <div class="modal-spec-item"><span class="modal-spec-label">Enclosure</span>
+                                <div class="modal-spec-value">IP23</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compact Sub Station -->
+                <div class="product-card-new" data-title="Compact Sub Station">
+                    <div class="pc-img-wrapper">
+                        <img src="images/products/super-series-unitized-sub-station-1.jpg" alt="Compact Sub Station">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">COMPACT SUB STATION</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('Compact Sub Station'); return false;"
+                                class="btn-quote-sm">Get Quote <span>→</span></a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Compact unitized substation for space-constrained urban installations.
+                        </div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Type</span>
+                                <div class="modal-spec-value">Unitized</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- HT PANEL (11KV/33KV) UNITIZED SUBSTATION -->
+        <div class="category-section">
+            <div class="category-header">
+                <span class="category-icon">⚙️</span>
+                <h2 class="category-title">HT PANEL (11KV/33KV) UNITIZED SUBSTATION</h2>
+            </div>
+            <div class="product-grid">
+                <!-- HT VCB PANEL -->
+                <div class="product-card-new" data-title="HT VCB Panel">
+                    <div class="pc-img-wrapper">
+                        <img src="images/site/ht_vcb_panel.jpg" alt="HT VCB Panel">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">HT VCB PANEL</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('HT VCB Panel'); return false;" class="btn-quote-sm">
+                                Get Quote <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Vacuum Circuit Breakers for transformer protection with short circuit,
+                            earth fault, over current, and under current protection.</div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Voltage</span>
+                                <div class="modal-spec-value">11kV / 33kV</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LT & TYPE BREAK PANEL -->
+                <div class="product-card-new" data-title="LT & Type Break Panel">
+                    <div class="pc-img-wrapper">
+                        <img src="images/products/lbs_panel.png" alt="LT & Type Break Panel">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">LT & TYPE BREAK PANEL</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('LT & Type Break Panel'); return false;"
+                                class="btn-quote-sm">Get Quote <span>→</span></a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Load Break Switch panels for switching on/off the supply in HT
+                            distribution networks.</div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Voltage</span>
+                                <div class="modal-spec-value">11kV / 33kV</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- METERING CUBICLE -->
+                <div class="product-card-new" data-title="Metering Cubicle">
+                    <div class="pc-img-wrapper">
+                        <img src="images/products/metering_cubicle.png" alt="Metering Cubicle">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">METERING CUBICLE</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('Metering Cubicle'); return false;" class="btn-quote-sm">Get
+                                Quote <span>→</span></a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Secure cubicle for high tension metering equipment with tamper-proof
+                            protection.</div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Protection</span>
+                                <div class="modal-spec-value">Tamper Proof</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- USS -->
+                <div class="product-card-new" data-title="Unitized Sub Station (USS)">
+                    <div class="pc-img-wrapper">
+                        <img src="images/products/super-series-unitized-sub-station-1.jpg" alt="Unitized Sub Station">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">USS</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('Unitized Sub Station (USS)'); return false;"
+                                class="btn-quote-sm">Get Quote <span>→</span></a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Unitized substation for urban areas with space constraints. TYPE TESTED
+                            from CPRI for Oil and VPI dry type transformer.</div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Dimensions</span>
+                                <div class="modal-spec-value">3000x2500x2500 (lbh)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LT PANEL -->
+        <div class="category-section">
+            <div class="category-header">
+                <span class="category-icon">🎛️</span>
+                <h2 class="category-title">LT PANEL</h2>
+            </div>
+            <div class="product-grid">
+                <!-- APFC PANEL -->
+                <div class="product-card-new" data-title="APFC Panel">
+                    <div class="pc-img-wrapper">
+                        <img src="images/products/apfc_panel.png" alt="APFC Panel">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">APFC PANEL</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('APFC Panel'); return false;" class="btn-quote-sm">Get Quote
+                                <span>→</span></a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Automatic Power Factor Correction panel to improve energy efficiency.
+                        </div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Stages</span>
+                                <div class="modal-spec-value">4/6/8/12</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MCC PANEL -->
+                <div class="product-card-new" data-title="MCC Panel">
+                    <div class="pc-img-wrapper">
+                        <img src="images/products/mcc-panels-1.jpg" alt="MCC Panel">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">MCC PANEL</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('MCC Panel'); return false;" class="btn-quote-sm">Get Quote
+                                <span>→</span></a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Motor Control Center panels, PLC based auto-control panels for exhaust
+                            systems, VFD, mega kitchens, and restaurants.</div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Automation</span>
+                                <div class="modal-spec-value">Automatic</div>
+                            </div>
+                            <div class="modal-spec-item"><span class="modal-spec-label">Voltage</span>
+                                <div class="modal-spec-value">415V</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PCC PANEL -->
+                <div class="product-card-new" data-title="PCC Panel">
+                    <div class="pc-img-wrapper">
+                        <img src="images/products/pcc-panels-1.jpg" alt="PCC Panel">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">PCC PANEL</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('PCC Panel'); return false;" class="btn-quote-sm">Get Quote
+                                <span>→</span></a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Power Control Center panels for power distribution on the LT side from
+                            feeder pillar to complex interior.</div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Voltage</span>
+                                <div class="modal-spec-value">415V</div>
+                            </div>
+                            <div class="modal-spec-item"><span class="modal-spec-label">IP Rating</span>
+                                <div class="modal-spec-value">IP54</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FEEDER PILLAR (INDOOR+ OUTDOOR) -->
+        <div class="category-section">
+            <div class="category-header">
+                <span class="category-icon">🔋</span>
+                <h2 class="category-title">FEEDER PILLAR (INDOOR+ OUTDOOR)</h2>
+            </div>
+            <div class="product-grid">
+                <!-- FEEDER PILLAR 1 -->
+                <div class="product-card-new" data-title="Feeder Pillar">
+                    <div class="pc-img-wrapper">
+                        <img src="images/products/LT-feeder-pillar-1.jpg" alt="Feeder Pillar">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">FEEDER PILLAR</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('Feeder Pillar'); return false;" class="btn-quote-sm">Get
+                                Quote <span>→</span></a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Power distribution panels for low tension side, typically used in urban
+                            infrastructure.</div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Material</span>
+                                <div class="modal-spec-value">Mild Steel</div>
+                            </div>
+                            <div class="modal-spec-item"><span class="modal-spec-label">IP Rating</span>
+                                <div class="modal-spec-value">IP44</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FEEDER PILLAR 2 -->
+                <div class="product-card-new" data-title="4 Way Feeder Pillar">
+                    <div class="pc-img-wrapper">
+                        <img src="images/products/LT-4-way-feeder-pillar-1.jpg" alt="4 Way Feeder Pillar">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">4 WAY FEEDER PILLAR</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('4 Way Feeder Pillar'); return false;" class="btn-quote-sm">
+                                Get Quote <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Advanced feeder pillar for 4-way power distribution.</div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Ways</span>
+                                <div class="modal-spec-value">4</div>
+                            </div>
+                            <div class="modal-spec-item"><span class="modal-spec-label">Voltage</span>
+                                <div class="modal-spec-value">220V</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MINI FEEDER PILLAR -->
+                <div class="product-card-new" data-title="Mini Feeder Pillar">
+                    <div class="pc-img-wrapper">
+                        <img src="images/products/mini_feeder_pillar.png" alt="Mini Feeder Pillar">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">MINI FEEDER PILLAR</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('Mini Feeder Pillar'); return false;" class="btn-quote-sm">Get
+                                Quote <span>→</span></a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Compact feeder pillar for street lighting and small distribution
+                            networks.</div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Material</span>
+                                <div class="modal-spec-value">CRCA / Galvanized</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RMU (11KV/33KV) (INDOOR APPROVAL) -->
+        <div class="category-section">
+            <div class="category-header">
+                <span class="category-icon">🔄</span>
+                <h2 class="category-title">RMU (11KV/33KV) (INDOOR APPROVAL)</h2>
+            </div>
+            <div class="product-grid">
+                <!-- RMU 1 -->
+                <div class="product-card-new" data-title="Ring Main Unit">
+                    <div class="pc-img-wrapper">
+                        <img src="images/products/ring-main-unit-1.jpg" alt="Ring Main Unit">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">RING MAIN UNIT</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('Ring Main Unit'); return false;" class="btn-quote-sm">
+                                Get Quote <span>→</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Ring Main Units for HT line connection and distribution at residential,
+                            commercial or industrial usage.</div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Rated Voltage</span>
+                                <div class="modal-spec-value">11000V</div>
+                            </div>
+                            <div class="modal-spec-item"><span class="modal-spec-label">Rated Current</span>
+                                <div class="modal-spec-value">630 Amp</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RMU 2 -->
+                <div class="product-card-new" data-title="Gas Insulated Switchgear">
+                    <div class="pc-img-wrapper">
+                        <img src="images/products/gis_switchgear.png" alt="Gas Insulated Switchgear">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">GIS</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('Gas Insulated Switchgear'); return false;"
+                                class="btn-quote-sm">Get Quote <span>→</span></a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Compact gas-insulated switchgear for high reliability grid connections.
+                        </div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Insulation</span>
+                                <div class="modal-spec-value">SF6 Gas</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SUBSTATION BAY MATERIAL (OUTDOOR APPROVAL) -->
+        <div class="category-section">
+            <div class="category-header">
+                <span class="category-icon">🏗️</span>
+                <h2 class="category-title">SUBSTATION BAY MATERIAL (OUTDOOR APPROVAL)</h2>
+            </div>
+            <div class="product-grid">
+                <!-- CT/PT -->
+                <div class="product-card-new" data-title="CT/PT Unit">
+                    <div class="pc-img-wrapper">
+                        <img src="images/products/ct_pt_unit.png" alt="CT/PT Unit">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">CT/PT</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('CT/PT Unit'); return false;" class="btn-quote-sm">Get Quote
+                                <span>→</span></a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Current and Potential Transformers for metering and protection.</div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Accuracy Class</span>
+                                <div class="modal-spec-value">0.2s / 0.5s</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HG FUSE -->
+                <div class="product-card-new" data-title="HG Fuse Set">
+                    <div class="pc-img-wrapper">
+                        <img src="images/products/hg_fuse.png" alt="HG Fuse">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">HG FUSE</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('HG Fuse Set'); return false;" class="btn-quote-sm">Get Quote
+                                <span>→</span></a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Horn Gap Fuse unit for overcurrent protection in outdoor substations.
+                        </div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Material</span>
+                                <div class="modal-spec-value">Porcelain / Polymer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ISOLATOR -->
+                <div class="product-card-new" data-title="Isolator / GO Switch">
+                    <div class="pc-img-wrapper">
+                        <img src="images/products/isolator_switch.png" alt="Isolator GO Switch">
+                    </div>
+                    <div class="pc-content">
+                        <h3 class="pc-title">ISOLATOR</h3>
+                        <div class="pc-actions">
+                            <button class="btn-details" onclick="openModal(this)">View Details</button>
+                            <a href="#" onclick="getQuote('Isolator / GO Switch'); return false;"
+                                class="btn-quote-sm">Get Quote <span>→</span></a>
+                        </div>
+                    </div>
+                    <div class="product-data" style="display:none;">
+                        <div class="data-desc">Gang Operated Air Break Switch for isolation of circuits.</div>
+                        <div class="data-specs">
+                            <div class="modal-spec-item"><span class="modal-spec-label">Operation</span>
+                                <div class="modal-spec-value">Manual</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <!-- Modal HTML -->
+    <div id="productModalOverlay" class="modal-overlay">
+        <div class="product-modal">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-body">
+                <div class="modal-img-container">
+                    <img id="modalImg" src="" alt="Product Image">
+                </div>
+                <div class="modal-content-container">
+                    <h2 id="modalTitle" class="modal-title">Product Title</h2>
+                    <p id="modalDesc" class="modal-desc">Product Description.</p>
+                    <div class="modal-specs">
+                        <div class="modal-specs-title">
+                            📅 Technical Specifications
+                        </div>
+                        <div id="modalSpecsGrid" class="modal-specs-grid">
+                            <!-- JS Injected Specs -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal()">Close</button>
+                <a href="#" id="modalQuoteBtn" class="btn btn-primary">Get Quote →</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script>
+        // Modal Functionality
+        const modalOverlay = document.getElementById('productModalOverlay');
+        const modalImg = document.getElementById('modalImg');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDesc = document.getElementById('modalDesc');
+        const modalSpecsGrid = document.getElementById('modalSpecsGrid');
+        const modalQuoteBtn = document.getElementById('modalQuoteBtn');
+        const body = document.body;
+
+        function openModal(btn) {
+            // Find parent card
+            const card = btn.closest('.product-card-new');
+
+            // Extract Data
+            const imgSrc = card.querySelector('.pc-img-wrapper img').src;
+            const title = card.querySelector('.pc-title').textContent;
+            const desc = card.querySelector('.data-desc').innerHTML;
+            const specsHTML = card.querySelector('.data-specs').innerHTML;
+
+            // Populate Modal
+            modalImg.src = imgSrc;
+            modalTitle.textContent = title;
+            modalDesc.innerHTML = desc;
+            modalSpecsGrid.innerHTML = specsHTML;
+
+            // Set Quote Button Link (WhatsApp)
+            const phone = '919552548433';
+            const message = `I am interested in ${title}. Please provide a quote.`;
+            const quoteLink = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+            modalQuoteBtn.href = quoteLink;
+            modalQuoteBtn.target = "_blank"; // Open in new tab
+
+            // Show Modal
+            modalOverlay.classList.add('active');
+            body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closeModal() {
+            modalOverlay.classList.remove('active');
+            body.style.overflow = '';
+        }
+
+        // Close on outside click
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) {
+                closeModal();
+            }
+        });
+
+        // Search Functionality
+        document.getElementById('productSearch').addEventListener('input', function (e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const products = document.querySelectorAll('.product-card-new');
+            const categories = document.querySelectorAll('.category-section');
+
+            products.forEach(product => {
+                const title = product.getAttribute('data-title').toLowerCase();
+                if (title.includes(searchTerm)) {
+                    product.style.display = 'flex';
+                    // Ensure parent grid is visible if it was hidden
+                    product.closest('.product-grid').style.display = 'grid';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+
+            // Hide empty categories
+            categories.forEach(category => {
+                const allProducts = category.querySelectorAll('.product-card-new');
+                let hasVisible = false;
+                allProducts.forEach(p => {
+                    if (p.style.display !== 'none') hasVisible = true;
+                });
+
+                if (!hasVisible) {
+                    category.style.display = 'none';
+                } else {
+                    category.style.display = 'block';
+                }
+            });
+        });
+
+        // Get Quote Direct Function (WhatsApp)
+        function getQuote(productName) {
+            const phone = '919552548433';
+            const message = `I am interested in ${productName}. Please provide a quote.`;
+            const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+
+</html>

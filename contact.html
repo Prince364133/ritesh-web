@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Zestech Enterprises</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-header {
+            background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.8)), url('images/site/hero2.webp');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .contact-form {
+            background: #fff;
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+        }
+
+        .contact-info-card {
+            background: var(--color-bg-light);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <div class="contact-header">
+        <div class="container">
+            <h1 style="color: #fff;">Get In Touch</h1>
+            <p>We are here to assist you with your electrical requirements</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 4rem;">
+
+                <!-- WhatsApp Form -->
+                <div>
+                    <h2 style="margin-bottom: 1.5rem;">For more enquiry</h2>
+                    <form id="whatsappForm" class="contact-form">
+                        <div class="form-group">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="john@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Requirement</label>
+                            <select id="requirement" class="form-control">
+                                <option>General Inquiry</option>
+                                <option>Bulk Order Quote</option>
+                                <option>Technical Support</option>
+                                <option>Partnership</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea id="message" class="form-control" rows="5"
+                                placeholder="Tell us about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send via WhatsApp</button>
+                    </form>
+
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const urlParams = new URLSearchParams(window.location.search);
+                            const productParam = urlParams.get('product');
+                            const messageParam = urlParams.get('message');
+
+                            if (messageParam) {
+                                document.getElementById('message').value = messageParam;
+                            } else if (productParam) {
+                                document.getElementById('message').value = `I am interested in ${productParam}. Please provide a quote.`;
+                            }
+                        });
+
+                        document.getElementById('whatsappForm').addEventListener('submit', function (e) {
+                            e.preventDefault();
+
+                            const name = document.getElementById('name').value;
+                            const email = document.getElementById('email').value;
+                            const requirement = document.getElementById('requirement').value;
+                            const message = document.getElementById('message').value;
+
+                            const text = `*New Inquiry from Website*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Requirement:*
+                    ${requirement}%0A*Message:* ${message}`;
+
+                            const phone = '919552548433'; // Updated contact number
+                            const url = `https://wa.me/${phone}?text=${text}`;
+
+                            window.open(url, '_blank');
+                        });
+                    </script>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h2 style="margin-bottom: 1.5rem;">Contact Information</h2>
+                    <div class="contact-info-card">
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">Head Office</h4>
+                            <p style="color: #555;">
+                                Second Floor, Datta Kurpa Building,<br>
+                                Atrey Layout, Pratap Nagar,<br>
+                                Nagpur - 440022, India
+                            </p>
+                        </div>
+
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">Email Us</h4>
+                            <p style="color: #555;">
+                                <a href="mailto:zestechenterprises@gmail.com"
+                                    style="color: var(--color-accent);">zestechenterprises@gmail.com</a>
+                            </p>
+                        </div>
+
+                        <div style="margin-bottom: 2rem;">
+                            <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">Call Us</h4>
+                            <p style="color: #555;">
+                                +91 9552548433
+                            </p>
+                        </div>
+
+                        <div style="margin-top: 3rem;">
+                            <img src="images/site/facility.jpg" alt="Zestech Enterprises Local Presence"
+                                style="width: 100%; border-radius: var(--radius-sm); opacity: 0.8;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
